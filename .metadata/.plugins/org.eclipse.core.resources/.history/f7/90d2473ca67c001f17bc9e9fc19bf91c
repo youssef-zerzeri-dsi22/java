@@ -1,0 +1,8 @@
+package app;
+
+public class circle {
+ Main de=new Main();
+ Main d=new Main();
+	d.setRadius(2);
+	System.out.println(d.getRadius());
+}

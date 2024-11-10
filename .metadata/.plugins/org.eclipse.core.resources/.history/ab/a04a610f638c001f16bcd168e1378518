@@ -1,0 +1,39 @@
+package employe;
+
+
+public class main {
+	//private Employe e;
+	//private Ve e;
+  //  Salarie[] tabSalarie = new Salarie[5];
+
+    public static void main(String[] args) {
+    	 Salaire[] tab=new Salaire[5];
+
+        //System.out.println(p.toString());
+    	Employe p1 =new Employe(12345,"Walid",2002,15,4);
+    	Vendeur p2 =new Vendeur(23445,"Yessine",2007,1000,0.1);
+    	Vendeur p3 =new Vendeur(65478,"Nassime",2000,700,0.1);
+    	Employe p4 =new Employe(87698,"Aymen ",2003,19,5);
+    	Employe p5 =new Employe(12345,"Khaled",2008,7,4);
+    	 tab[0] = p1;
+         tab[1] =p2;
+         tab[2] = p3;
+         tab[3] = p4;
+         tab[4] = p5;
+     //   System.out.println(p3.toString());
+        for(int i=0;i<5;i++) {
+        	if(tab[i] instanceof Employe) {
+        		System.out.println("********list des employés*********");
+        		System.out.println(tab[i].toString());
+        	}
+        }
+        for(int i=0;i<5;i++) {
+        	if(tab[i] instanceof Vendeur) {
+        		System.out.println("********list des vendeurs*********");
+        		System.out.println(tab[i].toString());
+        	}
+        }
+    	
+    	
+}
+}

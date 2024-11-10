@@ -1,0 +1,7 @@
+package employe;
+
+import Salaire;
+
+public class Employe extends Salaire {
+
+}

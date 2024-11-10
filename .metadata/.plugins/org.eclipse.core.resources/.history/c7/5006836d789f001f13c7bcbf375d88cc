@@ -1,0 +1,21 @@
+package assiete;
+public class Cuillere extends Ustensile {
+    private double longueur;
+
+    public Cuillere(int anneeFabrication, double longueur) {
+        super(anneeFabrication);
+        this.longueur = longueur;
+    }
+
+    @Override
+    public double calculerValeur() {
+        int age = 2024 - anneeFabrication;
+        return (age > 30) ? age * 0.5 : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Cuillère, " + super.toString() + ", Longueur : " + longueur;
+    }
+}
+

@@ -1,0 +1,9 @@
+package assiete;
+public  class Ustensile {
+    protected int anneeFabrication;
+
+    public Ustensile(int anneeFabrication) {
+        this.anneeFabrication = anneeFabrication;
+    }
+
+}

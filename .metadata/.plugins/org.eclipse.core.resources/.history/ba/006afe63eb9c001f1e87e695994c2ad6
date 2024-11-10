@@ -1,0 +1,24 @@
+package assiete;
+
+public class AssietteRonde extends Assiette {
+    private double rayon;
+
+    public AssietteRonde(int anneeFabrication, double rayon) {
+        super(anneeFabrication);
+        this.rayon = rayon;
+    }
+
+    @Override
+    public double calculerSurface() {
+        return 3.14 * rayon * rayon;
+    }
+
+    @Override
+    public double calculerValeur() {
+        int age = 2024 - anneeFabrication;
+        if (age > 50) {
+            return (age - 50) * 1.0;
+        }
+        return 0;
+    }
+}

@@ -1,0 +1,9 @@
+package employe;
+
+//import Salaire;
+
+public class Employe extends Salaire {
+	private double Hsupp;
+	private double PHsupp;
+
+}

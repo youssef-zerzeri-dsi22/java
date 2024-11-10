@@ -1,0 +1,11 @@
+package assiete;
+
+public abstract class Assiette extends Ustensile {
+
+    public Assiette(int anneeFabrication) {
+        super(anneeFabrication);
+    }
+
+
+}
+

@@ -1,0 +1,10 @@
+
+public abstract class Ustensile {
+    protected int anneeFabrication;
+
+    public Ustensile(int anneeFabrication) {
+        this.anneeFabrication = anneeFabrication;
+    }
+
+    public abstract double calculerValeur();
+}

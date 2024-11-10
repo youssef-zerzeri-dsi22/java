@@ -1,0 +1,17 @@
+package assiete;
+public class Ustensile {
+    protected int anneeFabrication;
+
+    public Ustensile(int anneeFabrication) {
+        this.anneeFabrication = anneeFabrication;
+    }
+
+    public double calculerValeur() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Année de fabrication : " + anneeFabrication;
+    }
+}

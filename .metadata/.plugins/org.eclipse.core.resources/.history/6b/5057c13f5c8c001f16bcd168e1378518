@@ -1,0 +1,15 @@
+package employe;
+
+
+public class main {
+	private Employe e;
+	private Salaire tab[];
+    public static void main(String[] args) {
+    	Employe p =new Employe( 122, "doflamingo", 2006, 4, 3);
+        System.out.println(p.toString());
+
+    	
+    	
+    	
+}
+}

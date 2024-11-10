@@ -1,0 +1,28 @@
+package assiete;
+
+public class AssietteCarree extends Assiette {
+    private double cote;
+
+    public AssietteCarree(int anneeFabrication, double cote) {
+        super(anneeFabrication);
+        this.cote = cote;
+    }
+
+    @Override
+    public double calculerSurface() {
+        return cote * cote;
+    }
+
+    @Override
+    public double calculerValeur() {
+        int age = 2024 - anneeFabrication;
+        double valeurAssietteRonde = new AssietteRonde(anneeFabrication, cote / Math.sqrt(3.14)).calculerValeur();
+        return valeurAssietteRonde * 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Assiette Carrée, " + super.toString() + ", Côté : " + cote;
+    }
+}
+

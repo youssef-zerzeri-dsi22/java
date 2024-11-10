@@ -1,0 +1,18 @@
+package assiete;
+
+public class Assiette extends Ustensile {  
+                                           
+    public Assiette(int anneeFabrication) { 
+        super(anneeFabrication);            
+    }                                       
+                                           
+    public double calculerSurface() {       
+        return 0;                          
+    }                                      
+                                           
+    @Override                              
+    public String toString() {             
+        return super.toString();           
+    }                                      
+}                                          
+                                           

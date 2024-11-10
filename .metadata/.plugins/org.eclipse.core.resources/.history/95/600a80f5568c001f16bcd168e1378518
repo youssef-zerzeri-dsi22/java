@@ -1,0 +1,51 @@
+package employe;
+
+public class Salaire {
+	 private int matricule;
+
+ private String nom;
+ private double recrutement;
+public Salaire(int matricule, String nom, double recrutement) {
+	this.matricule = matricule;
+	this.nom = nom;
+	this.recrutement = recrutement;
+}
+public Salaire() {
+
+}
+public int getMatricule() {
+	return matricule;
+}
+public void setMatricule(int matricule) {
+	this.matricule = matricule;
+}
+public String getNom() {
+	return nom;
+}
+public void setNom(String nom) {
+	this.nom = nom;
+}
+public double getRecrutement() {
+	return recrutement;
+}
+public void setRecrutement(double recrutement) {
+	this.recrutement = recrutement;
+}
+@Override
+public String toString() {
+	return "Salaire [matricule=" + matricule + ", nom=" + nom + ", recrutement=" + recrutement + "]";
+}
+
+ public int salaireDate() {
+	 if(this.recrutement<2005) {
+		 return 400;
+	 }
+	 return 280;
+	 
+	 
+	 
+ }
+ 
+ 
+ 
+}
